@@ -319,7 +319,7 @@ go_default(){
 	fi
 }
 ## configure grub for modesetting and blacklist all nouveau drivers.
-grub_config
+# grub_config
 bus_id_query
 current=$(file -p /etc/X11/xorg.conf| sed -En "s|^.*xorg.(.*).conf$|\1|p")
 if [[ -s /var/log/Xorg.0.log ]]; then

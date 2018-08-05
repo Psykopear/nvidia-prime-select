@@ -1,5 +1,5 @@
 # nvidia-prime-select
-This is a fork of **[FedoraPrime](https://github.com/bosim/FedoraPrime)** enhanced for all linux distributions.
+This is a fork of **[nvidia-prime-select](wildtruc/nvidia-prime-select)** with some adjustments for my own setup on ArchLinux on an XPS-15 9570.
 
 # Introduction
 Seeking for a tools to swicht entirely from default **Intel®** GPU to the discret **Nvidia®** graphic card, I discover **[FedoraPrime](https://github.com/bosim/FedoraPrime)**.
@@ -21,7 +21,7 @@ Finally, the script needed a complete rewrite. For user, basics are still the sa
 
 Read Changelog display before install/uninstall/update.
 
-Thanks to the **[Nvidia Devtalk](https://devtalk.nvidia.com/default/topic/1024318/linux/-solved-nvidia-prime-on-dual-gpu-configuration-giving-a-blank-screen/2)** thread and to **nospam_** that giving me the necessary base to understand what changed. 
+Thanks to the **[Nvidia Devtalk](https://devtalk.nvidia.com/default/topic/1024318/linux/-solved-nvidia-prime-on-dual-gpu-configuration-giving-a-blank-screen/2)** thread and to **nospam_** that giving me the necessary base to understand what changed.
 
 Also added a libraries and xorg config editor.
 
@@ -52,9 +52,9 @@ Added options config file, report.sample and some fixes to grub and xrandr secti
 ## Options
  - *intel* : use the default GPU
  - *nvidia* : use the **Nvidia®** GPU
- 
+
 ## Before all
-In old version it was mandatory to edit library.conf first in case of special Nvidia drivers install. Now you can setup them directly with nvidia-prime-ui before entering you new setup. 
+In old version it was mandatory to edit library.conf first in case of special Nvidia drivers install. Now you can setup them directly with nvidia-prime-ui before entering you new setup.
 
 Gnome and Cinnamon use a *monitors.xml*(~/.config/monitors.xml) file to keep your screen config and overide any other setup if it doesn't match the xml file.
 
